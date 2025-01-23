@@ -4,13 +4,14 @@ let amigos = [];
 
 function agregarAmigo() {
     let amigoIngresado = document.getElementById("amigo").value;
-    if (amigoIngresado == null){
-        alert("Por favor, inserte un nombre.")
+    if (amigoIngresado == ""){
+        alert("Por favor, inserte un nombre.");
     } else {
         amigos.push(amigoIngresado);
     }
 
     limpiarCaja();
+    console.log(amigos);
 
 }
 
