@@ -36,13 +36,19 @@ function listaAmigos() {
 function sortearAmigo() {
 
     if( amigos.length === 0) {
-        alert("Adiciona un amigo para poder sortear")
+        let results = document.getElementById("resultado");
+        results.innerHTML = "Adiciona un amigo para poder sortear";
+        
         } else {
         let numeroNuevo = Math.floor(Math.random()*amigos.length);
         if(numeroLista.includes(numeroNuevo)) {
-            alert("Este amigo ja fue asignado, vuelve a sortear");
+            let results = document.getElementById("resultado");
+            results.innerHTML = "Este amigo ja fue asignado, vuelve a sortear";
+            
         } else {
-            alert(`Tu amigo secreto es: ${amigos[numeroNuevo]} `);
+            let results = document.getElementById("resultado");
+            results.innerHTML = `Tu amigo secreto es: ${amigos[numeroNuevo]} `;
+            
             numeroLista.push(numeroNuevo);
         }
     }
