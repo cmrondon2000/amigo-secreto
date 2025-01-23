@@ -10,9 +10,15 @@ function agregarAmigo() {
         amigos.push(amigoIngresado);
     }
 
+    limpiarCaja();
+
 }
 
 
 function sortearAmigo() {
     
+}
+
+function limpiarCaja(){
+    document.querySelector("#amigo").value = "";
 }
